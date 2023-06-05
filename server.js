@@ -18,6 +18,10 @@ app.post("/", (req, res) => {
   res.sendStatus(200);
 });
 
+app.get("/test", (req, res) => {
+  res.send("Funciona Perfecto")
+})
+
 app.get("/sse", (req, res) => {
   res.setHeader("Content-Type", "text/event-stream");
   res.setHeader("Cache-Control", "no-cache");
